@@ -62,11 +62,11 @@ A framework compatibility matrix must be matched against the **final merged devi
 | ID | Requirement | Evidence needed for acceptance | Current status |
 |---|---|---|---|
 | HAL-01 | Correct target FCM level | Exact stock and candidate device manifest target levels, matched to a supported Android 17 framework matrix | Concern: shared SM6150 community manifest declares target-level 4; Android 17 matrices examined do not include FCM 4 |
-| HAL-02 | Graphics mapper / allocator | Required mapper and allocator interface declarations, service implementation and compatible driver stack | Unknown: not visible in the shared manifest inspected so far |
+| HAL-02 | Graphics mapper / allocator | Required mapper and allocator interface declarations, service implementation and compatible driver stack | Partially verified: shared SM6150 product configuration lists mapper HIDL 3.0/4.0 implementation packages; final Hanoip inclusion and merged declaration unknown |
 | HAL-03 | Graphics composer / display | Compatible composer, display stack, gralloc/mapper and GPU userspace | Unknown |
-| HAL-04 | Health | Required Android 17 health HAL declaration and service implementation | Unknown: shared manifest instead shows a Motorola health HIDL declaration; merged stock manifest not established |
-| HAL-05 | Power | Required Android 17 power HAL declaration and service implementation | Unknown: not visible in the shared manifest inspected so far |
-| HAL-06 | Thermal | Required thermal HAL declaration and service implementation | Unknown: not visible in the shared manifest inspected so far |
+| HAL-04 | Health | Required Android 17 health HAL declaration and service implementation | Concern: shared product configuration lists Android health HIDL 2.1, but FCM 7 requires Android health AIDL 1; a matching AIDL implementation is not evidenced |
+| HAL-05 | Power | Required Android 17 power HAL declaration and service implementation | Partially verified: shared SM6150 source has an AIDL Power 2 service and explicit VINTF fragment; Hanoip product inclusion is unconfirmed |
+| HAL-06 | Thermal | Required thermal HAL declaration and service implementation | Partially verified: shared product configuration lists QTI thermal HIDL 2.0; final manifest declaration and Hanoip inclusion are unconfirmed |
 | HAL-07 | Audio | Audio and audio-effects interface versions, DSP integration and service behavior satisfy the selected framework matrix | Partially verified: shared manifest declares HIDL audio 6.0 and audio effects 6.0; runtime compatibility unknown |
 | HAL-08 | Camera | Camera provider, camera metadata, sensor integration and vendor extensions remain compatible | Partially verified: shared manifest declares camera provider HIDL 2.4; full camera stack unknown |
 | HAL-09 | Radio and telephony | Radio, SIM, data, IMS/VoLTE and emergency-call dependencies are identified and compatible | Partially verified: shared manifest lists radio HIDL interfaces; full vendor implementation and carrier behavior unknown |
@@ -157,3 +157,8 @@ The project should not move from feasibility research to any implementation clai
 7. A future test plan defines measurable acceptance criteria and clearly separates untested, passed and failed functions.
 
 Until then, the correct project status remains **research only**.
+
+
+### HAL source-audit clarification
+
+The separate [merged-manifest and HAL service audit](MOTO-G60-ANDROID17-MERGED-MANIFEST-SERVICE-AUDIT.md) found additional candidate services in the shared SM6150 product configuration. Those packages are not proof they are included in the Hanoip product: the public Hanoip product makefile does not directly inherit the shared `common.mk`, and generated vendor makefiles are unavailable in the inspected public source. Treat the shared-tree service evidence as partial until the final Hanoip product inheritance and merged manifest are established.
