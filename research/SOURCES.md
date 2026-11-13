@@ -83,3 +83,11 @@ Prefer manufacturer documentation, official AOSP documentation, and source repos
 - AOSP VINTF match rules: https://source.android.com/docs/core/architecture/vintf/match-rules
 - AOSP FCM lifecycle: https://source.android.com/docs/core/architecture/vintf/fcm
 - Moto G60 Android 17 FCM 7 compatibility audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-FCM7-COMPATIBILITY-AUDIT.md
+
+## Motorola Moto G60 One UI 9 requirements
+- Samsung One UI 9 beta announcement (Android 17 base): https://news.samsung.com/us/samsung-launches-one-ui-9-beta-galaxy-s26-series-users/
+- AOSP Android 17 FCM selection and kernel profile build rules: https://android.googlesource.com/platform/hardware/interfaces/+/android16-qpr2-release/compatibility_matrices/Android.bp
+- AOSP VINTF matching rules: https://source.android.com/docs/core/architecture/vintf/match-rules
+- AOSP compatibility definition document: https://source.android.com/docs/compatibility/cdd
+- AOSP compatibility test suite documentation: https://source.android.com/docs/compatibility/cts
+- Moto G60 One UI 9 research requirements checklist: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ONE-UI-9-REQUIREMENTS.md
