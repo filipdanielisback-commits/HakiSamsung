@@ -73,3 +73,13 @@ Prefer manufacturer documentation, official AOSP documentation, and source repos
 - Shared Motorola SM6150 compatibility matrix: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/compatibility_matrix.xml
 - Shared Motorola SM6150 proprietary file inventory: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/proprietary-files.txt
 - Detailed Moto G60 Android 17 hardware and vendor dependency map: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-HARDWARE-DRIVER-MAP.md
+
+
+## Motorola Moto G60 Android 17 FCM 7 compatibility audit
+- Shared Motorola SM6150 device manifest: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/manifest.xml
+- Hanoip BoardConfig.mk: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/BoardConfig.mk
+- AOSP Android 17 FCM selection and kernel profile build rules: https://android.googlesource.com/platform/hardware/interfaces/+/android16-qpr2-release/compatibility_matrices/Android.bp
+- AOSP FCM 7 framework compatibility matrix: https://android.googlesource.com/platform/hardware/interfaces/+/07df4f22df/compatibility_matrices/compatibility_matrix.7.xml
+- AOSP VINTF match rules: https://source.android.com/docs/core/architecture/vintf/match-rules
+- AOSP FCM lifecycle: https://source.android.com/docs/core/architecture/vintf/fcm
+- Moto G60 Android 17 FCM 7 compatibility audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-FCM7-COMPATIBILITY-AUDIT.md
