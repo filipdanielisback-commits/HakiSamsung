@@ -20,7 +20,9 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Android VINTF compatibility matrices: https://source.android.com/docs/core/architecture/vintf/comp-matrices
 - Android VINTF matching rules: https://source.android.com/docs/core/architecture/vintf/match-rules
 - Android VINTF FCM lifecycle: https://source.android.com/docs/core/architecture/vintf/fcm
-- AOSP Android 17 development FCM build configuration: https://android.googlesource.com/platform/hardware/interfaces/+/android16-qpr2-release/compatibility_matrices/Android.bp
+- AOSP Android 17 release FCM build configuration: https://android.googlesource.com/platform/hardware/interfaces/+/refs/heads/android17-release/compatibility_matrices/Android.bp
+- AOSP Android 17 release FCM 7 matrix: https://android.googlesource.com/platform/hardware/interfaces/+/refs/heads/android17-release/compatibility_matrices/compatibility_matrix.7.xml
+- AOSP Android 17 release FCM 8 matrix: https://android.googlesource.com/platform/hardware/interfaces/+/refs/heads/android17-release/compatibility_matrices/compatibility_matrix.8.xml
 - Android AIDL HAL guidance: https://source.android.com/docs/core/architecture/aidl/aidl-hals
 - Android HIDL guidance: https://source.android.com/docs/core/architecture/hidl
 
@@ -36,6 +38,7 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Motorola exact-build kernel tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
 - Moto G60 vendor/HAL source audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-VENDOR-HAL-AUDIT.md
 - Moto G60 Android 17 VINTF comparison: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-VINTF-COMPATIBILITY.md
+- Moto G60 Android 17 FCM/HAL matrix: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-FCM-MATRIX.md
 - TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
 - Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
 - Motorola Moto-common target list: https://github.com/moto-common/android_device_motorola_targets
