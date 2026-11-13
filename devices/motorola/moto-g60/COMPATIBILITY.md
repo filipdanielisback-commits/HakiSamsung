@@ -89,3 +89,10 @@ See [the detailed Android 17 FCM/HAL matrix](../../research/MOTO-G60-ANDROID17-F
 - Samsung One UI 9 / Android 17 framework and service dependencies.
 
 No firmware extraction, boot modification or flashing is part of this research milestone.
+
+
+## Kernel source comparison result
+
+The exact Motorola source tag and public Hanoip community kernel branch both identify Linux 4.14.190. Key shared files—including the SM6150 performance defconfig and Hanoip-specific extension config—have identical Git blob SHAs. The community tree has build/configuration changes, but no newer Linux kernel baseline was found in these reviewed repositories. See [the detailed kernel source comparison](../../research/MOTO-G60-KERNEL-SOURCE-COMPARISON.md).
+
+This is not proof that no other source path exists. It means the reviewed community kernel does not resolve the Android 17 kernel-version concern.
