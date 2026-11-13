@@ -52,3 +52,13 @@ Add official Xiaomi specifications, public kernel sources and device configurati
 ## Source quality
 
 Prefer manufacturer documentation, official AOSP documentation, and source repositories maintained for the exact device. Secondary articles can help discover leads, but should not be the only evidence for a compatibility claim. Record the exact branch, build, model and date checked. A repository's existence does not prove that it is maintained or compatible with a particular software build.
+
+
+## Motorola Moto G60 kernel source comparison
+- Motorola exact firmware source issue #574: https://github.com/MotorolaMobilityLLC/kernel-msm/issues/574
+- Motorola exact kernel tag: https://github.com/MotorolaMobilityLLC/kernel-msm/tree/MMI-S2RIS32.32-20-9-9-2-3
+- Motorola exact tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
+- Hanoip community kernel branch: https://github.com/motorola-sm6150-devs/android_kernel_motorola_sm6150/tree/lineage-20
+- Community Hanoip kernel commit enabling Clang LTO: https://github.com/motorola-sm6150-devs/android_kernel_motorola_sm6150/commit/5b04fac0cb2a8311ae69c8644384426e838d91fe
+- LineageOS SM6150 device-family README and supported-device information: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/README.md
+- Detailed Moto G60 kernel source comparison: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-KERNEL-SOURCE-COMPARISON.md
