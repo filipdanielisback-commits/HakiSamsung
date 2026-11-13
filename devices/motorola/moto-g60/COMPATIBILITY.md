@@ -4,7 +4,8 @@
 **RAM configuration:** 6 GB (user-confirmed)  
 **Codename commonly associated with this device:** hanoip  
 **Installed build reported by user:** S2RIS32.32-20-9-9-2-3  
-**Research status:** Initial source review completed; deeper platform analysis pending  
+**Installed Android:** Android 12 (user-confirmed)  
+**Research status:** Exact kernel-source tag identified; device-tree mapping in progress  
 **Port status:** No One UI 9 port exists or is claimed by this repository.
 
 ## Hardware and software baseline
@@ -19,10 +20,11 @@
 | CPU | Octa-core: 2x Kryo 470 Gold up to 2.3 GHz + 6x Kryo 470 Silver up to 1.8 GHz | Reported by device-tree documentation |
 | GPU | Adreno 618 | Reported by device-tree documentation |
 | Display | Approximately 6.8-inch, 1080 x 2460, 120 Hz IPS LCD | Reported by public device-tree documentation |
-| Android release for reported build | Android 12 | Strongly corroborated: Motorola kernel-source issue names the exact XT2135-2 Europe firmware package with the Android 12 marker; independent device/version listing also classifies this build as Android 12 |
-| Installed build | S2RIS32.32-20-9-9-2-3 | User-confirmed; exact build string appears in Motorola kernel-source request |
-| Kernel source status | Motorola kernel-source request #574 for this exact firmware release is marked published OSS code | Verified at request metadata level; source branch contents and completeness still need review |
-| Device tree | Public hanoip Android device trees exist | Verified |
+| Android release | Android 12 | User-confirmed; exact build appears in Motorola's matching source request and tag |
+| Installed build | S2RIS32.32-20-9-9-2-3 | User-confirmed |
+| Motorola kernel source | Exact annotated tag `MMI-S2RIS32.32-20-9-9-2-3` exists and points to commit `f6673a1302e3b9ca84c54e956ad4075d676fdf59` | Verified in Motorola's Git tag metadata |
+| Community device tree | Public hanoip `lineage-20` branch exists | Verified; Android 12 stock equivalence not established |
+| Community kernel path | Device tree expects `kernel/motorola/sm6150`; public SM6150 community kernel repositories have a `lineage-20` branch | Repository/branch mapping identified |
 | Current One UI 9 compatibility | No evidence | Unknown |
 
 Specifications can differ by regional and retail variant. The exact XT2135-2 Europe identity is now the reference target; family-level device trees still do not prove that every G60 variant has identical hardware or software.
@@ -30,37 +32,38 @@ Specifications can differ by regional and retail variant. The exact XT2135-2 Eur
 ## Public development references
 
 - Motorola kernel-source request for the exact build and Europe package: https://github.com/MotorolaMobilityLLC/kernel-msm/issues/574
+- Exact Motorola kernel Git tag: https://github.com/MotorolaMobilityLLC/kernel-msm/tree/MMI-S2RIS32.32-20-9-9-2-3
+- Motorola kernel tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
+- Hanoip Android device tree, `lineage-20`: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/tree/lineage-20
+- Hanoip community kernel tree, `lineage-20`: https://github.com/motorola-sm6150-devs/android_kernel_motorola_sm6150/tree/lineage-20
+- LineageOS SM6150 kernel tree, `lineage-20`: https://github.com/LineageOS/android_kernel_motorola_sm6150/tree/lineage-20
+- TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
 - Motorola support — Moto G60 hardware overview: https://en-us.support.motorola.com/app/answers/detail/a_id/159299/~/about-your-hardware---moto-g60
-- Hanoip Android device tree: https://github.com/motorola-sm6150-devs/device_motorola_hanoip
-- Hanoip TWRP device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
-- Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
 - Moto-common target status table: https://github.com/moto-common/android_device_motorola_targets
 - Independent Moto G60 build/version listing (corroboration only): https://www.phonecopy.com/en/phones/view/motorola_moto_g60
 
-The Motorola kernel-source issue identifies the matching package as `XT2135-2_HANOIP_RETEU_12_S2RIS32.32-20-9-9-2-3_subsidy-DEFAULT_regulatory-XT2135-2-EUROPE_CFC.xml.zip`. The issue is marked published OSS code. This is evidence that Motorola published a kernel-source response associated with this release; it is not yet proof that every required source component is present or that a compatible kernel can be built.
+## Kernel and device-tree mapping
 
-The Moto-common target table currently lists hanoip as **Dropped**. This describes that project's target status, not whether the phone itself works or whether other community sources exist.
+Motorola's issue #574 identifies the exact firmware package as `XT2135-2_HANOIP_RETEU_12_S2RIS32.32-20-9-9-2-3_subsidy-DEFAULT_regulatory-XT2135-2-EUROPE_CFC.xml.zip`. The issue is closed and carries the `published` label. A Motorola contributor links to the exact Git tag `MMI-S2RIS32.32-20-9-9-2-3`, whose annotated tag message is `Hanoip push for Android 12`. The tag points to commit `f6673a1302e3b9ca84c54e956ad4075d676fdf59`.
 
-## Research questions still open
+The public community device tree's `lineage-20` branch sets `TARGET_KERNEL_SOURCE := kernel/motorola/sm6150`. It expects proprietary vendor and firmware directories, including `vendor/motorola/hanoip`, `hanoip-firmware` and `hanoip-vendor`. Its configuration sets shipping API level 30 and target VNDK version 30.
 
-1. What exact Android security patch level and vendor build are installed on the user's device?
-2. Which published Motorola kernel branch and source commit match this exact XT2135-2 RETEU build?
-3. Which device-tree branch and common device dependencies match the same Android 12 software base?
-4. What vendor-interface and HAL versions are present in the documented Android 12 baseline?
-5. Which Android 17 framework requirements differ from the device's available platform?
-6. Which One UI components require Samsung-specific services, permissions or hardware?
+The community tree's `lineage-20` branch and corresponding community kernel branch form a plausible build-source pairing, but their equivalence to Motorola's exact Android 12 source tag has not been demonstrated. Do not mix these branches or infer compatibility from matching codenames alone.
+
+See [the detailed source audit](../../research/MOTO-G60-SOURCE-AUDIT.md) for tag IDs, branch commits and caveats.
 
 ## Initial feasibility assessment
 
-The exact regional build and a matching Motorola kernel-source publication reference make the baseline substantially more specific. However, public Android device trees and a kernel-source publication do not demonstrate compatibility with Samsung One UI 9. The Snapdragon platform alone is not enough to establish feasibility.
+The exact Motorola Android 12 kernel tag is now identified, and a public community device-tree/kernel pairing has been mapped. This is meaningful groundwork, but it does not demonstrate compatibility with Samsung One UI 9. Vendor interfaces, HALs, proprietary dependencies and Samsung-specific services remain unverified.
 
 **Assessment: Research candidate; feasibility undetermined.**
 
 ## Next evidence to collect
 
-- Publicly documented Android security patch level and build properties for the exact XT2135-2 RETEU build.
-- Matching kernel source release, commit provenance and license.
-- Device-tree branch provenance and supported Android base.
+- Android security patch level and public build properties for the exact XT2135-2 RETEU build.
+- Source-tree and tag contents comparison between Motorola's exact Android 12 tag and community kernel branches.
+- Device-tree branch provenance and proprietary vendor-interface assumptions.
 - Documented HAL and vendor-interface requirements.
+- Samsung One UI 9 / Android 17 framework and service dependencies.
 
 No firmware extraction, boot modification or flashing is part of this research milestone.
