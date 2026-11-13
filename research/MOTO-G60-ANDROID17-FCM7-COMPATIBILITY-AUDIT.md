@@ -123,3 +123,16 @@ Do not treat a missing declaration in one XML file as proof the HAL is absent fr
 ## Scope and licensing boundary
 
 This report is based on public source and documentation only. It does not involve flashing, bootloader changes, firmware extraction, partition access, or proprietary binary redistribution. Proprietary firmware and vendor binaries are not treated as freely redistributable.
+
+
+## Addendum — shared product configuration audit
+
+A later source audit found candidate implementation packages in the shared SM6150 `common.mk` that are not visible in the shared `manifest.xml` alone. See [MOTO-G60-ANDROID17-MERGED-MANIFEST-SERVICE-AUDIT.md](MOTO-G60-ANDROID17-MERGED-MANIFEST-SERVICE-AUDIT.md).
+
+This refines, but does not eliminate, the earlier gaps:
+- Graphics mapper HIDL 3.0/4.0 implementation packages are listed in shared product configuration; final Hanoip inclusion and manifest declaration remain unknown.
+- Shared product configuration lists Android health HIDL 2.1 packages, but this is not the FCM 7-required Android health AIDL 1 interface.
+- Shared product configuration includes an AIDL Power 2 service with an explicit VINTF fragment declaring `IPower/default`; final Hanoip inclusion remains unknown.
+- Shared product configuration lists a QTI thermal HIDL 2.0 service; final declaration and Hanoip inclusion remain unknown.
+
+The public Hanoip product makefile does not directly inherit shared `common.mk`; generated vendor makefiles are not present in the inspected public Hanoip repository. Therefore, package entries in the shared tree cannot be assumed to be present in the final Hanoip product. The FCM target-level mismatch and kernel-profile concern remain unchanged.
