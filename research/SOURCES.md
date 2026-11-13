@@ -14,6 +14,13 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Android Open Source Project: https://source.android.com/
 - Android Compatibility Definition Document: https://source.android.com/docs/compatibility/cdd
 - Android Compatibility Test Suite: https://source.android.com/docs/compatibility/cts
+- Android HAL overview: https://source.android.com/docs/core/architecture/hal
+- Android VINTF design: https://source.android.com/docs/core/architecture/vintf
+- Android VINTF manifests: https://source.android.com/docs/core/architecture/vintf/objects
+- Android VINTF compatibility matrices: https://source.android.com/docs/core/architecture/vintf/comp-matrices
+- Android VINTF matching rules: https://source.android.com/docs/core/architecture/vintf/match-rules
+- Android AIDL HAL guidance: https://source.android.com/docs/core/architecture/aidl/aidl-hals
+- Android HIDL guidance: https://source.android.com/docs/core/architecture/hidl
 
 ## Motorola Moto G60 / hanoip
 
@@ -25,6 +32,7 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Motorola exact-build kernel-source request #574: https://github.com/MotorolaMobilityLLC/kernel-msm/issues/574
 - Motorola exact-build kernel Git tag: https://github.com/MotorolaMobilityLLC/kernel-msm/tree/MMI-S2RIS32.32-20-9-9-2-3
 - Motorola exact-build kernel tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
+- Moto G60 vendor/HAL source audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-VENDOR-HAL-AUDIT.md
 - TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
 - Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
 - Motorola Moto-common target list: https://github.com/moto-common/android_device_motorola_targets
