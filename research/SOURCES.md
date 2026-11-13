@@ -6,8 +6,8 @@ Sources below are starting points. Each technical claim in a device report shoul
 
 - Samsung Mobile Press, One UI 9 official rollout announcement (September 16, 2026): https://api.samsungmobilepress.com/press-releases/one-ui-9-official-rollout-latest-galaxy-experiences
   - Primary source for the official rollout announcement and feature descriptions.
-- Samsung Newsroom, One UI 9 beta announcement: https://news.samsung.com/
-  - Use the exact regional announcement and date when documenting Android base details. Confirm current product information against Samsung's official pages.
+- Samsung Newsroom, One UI 9 beta announcement (May 12, 2026): https://news.samsung.com/us/samsung-launches-one-ui-9-beta-galaxy-s26-series-users/
+  - Primary source explicitly stating One UI 9 beta is built on Android 17.
 
 ## Android platform
 
@@ -19,6 +19,8 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Android VINTF manifests: https://source.android.com/docs/core/architecture/vintf/objects
 - Android VINTF compatibility matrices: https://source.android.com/docs/core/architecture/vintf/comp-matrices
 - Android VINTF matching rules: https://source.android.com/docs/core/architecture/vintf/match-rules
+- Android VINTF FCM lifecycle: https://source.android.com/docs/core/architecture/vintf/fcm
+- AOSP Android 17 development FCM build configuration: https://android.googlesource.com/platform/hardware/interfaces/+/android16-qpr2-release/compatibility_matrices/Android.bp
 - Android AIDL HAL guidance: https://source.android.com/docs/core/architecture/aidl/aidl-hals
 - Android HIDL guidance: https://source.android.com/docs/core/architecture/hidl
 
@@ -33,6 +35,7 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Motorola exact-build kernel Git tag: https://github.com/MotorolaMobilityLLC/kernel-msm/tree/MMI-S2RIS32.32-20-9-9-2-3
 - Motorola exact-build kernel tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
 - Moto G60 vendor/HAL source audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-VENDOR-HAL-AUDIT.md
+- Moto G60 Android 17 VINTF comparison: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-VINTF-COMPATIBILITY.md
 - TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
 - Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
 - Motorola Moto-common target list: https://github.com/moto-common/android_device_motorola_targets
