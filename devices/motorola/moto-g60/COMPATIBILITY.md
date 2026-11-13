@@ -58,6 +58,17 @@ The exact Motorola Android 12 kernel tag is now identified, and a public communi
 
 **Assessment: Research candidate; feasibility undetermined.**
 
+
+## Android 17 / One UI 9 VINTF checkpoint
+
+Samsung's official One UI 9 beta announcement explicitly identifies Android 17 as its base, and Samsung later announced the stable rollout. Android 17 is now the verified research target, not an assumption.
+
+The exact Motorola kernel source tag matching the reported build has Linux version **4.14.190** in its top-level Makefile. The reviewed AOSP Android 17 development FCM configuration lists FCM levels 6, 7, 8, 202404, 202504 and 202604, omitting FCM 5. Its FCM 6 Android 17 matrix build entry lists kernel profiles 4.19, 5.4 and 5.10, not 4.14. This is a significant preliminary kernel/VINTF compatibility warning, not a completed device-side VINTF match test.
+
+The public community device tree declares shipping API level 30 and VNDK 30, but it does not establish the stock Android 12 manifest's target FCM level. No exact stock device VINTF manifest or device compatibility matrix was located in the reviewed public device-tree branch. Therefore stock HAL declarations, manifest target level and kernel target level remain unknown.
+
+See [the Android 17 VINTF comparison](../../research/MOTO-G60-ANDROID17-VINTF-COMPATIBILITY.md) for the full evidence, source links, and limitations.
+
 ## Next evidence to collect
 
 - Android security patch level and public build properties for the exact XT2135-2 RETEU build.
