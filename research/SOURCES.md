@@ -4,12 +4,10 @@ Sources below are starting points. Each technical claim in a device report shoul
 
 ## Samsung One UI 9
 
-- Samsung Newsroom, One UI 9 beta announcement (May 12, 2026): https://news.samsung.com/us/samsung-launches-one-ui-9-beta-galaxy-s26-series-users/
-  - Samsung describes the beta as based on Android 17.
-- Samsung Newsroom, One UI 9 rollout announcement (September 16, 2026): https://news.samsung.com/us/samsung-begins-official-rollout-one-ui-9-latest-galaxy-experiences-devices/
+- Samsung Mobile Press, One UI 9 official rollout announcement (September 16, 2026): https://api.samsungmobilepress.com/press-releases/one-ui-9-official-rollout-latest-galaxy-experiences
   - Primary source for the official rollout announcement and feature descriptions.
-- Samsung One UI software update information: https://www.samsung.com/in/support/mobile-devices/one-ui-software-update/
-  - Regional rollout information; availability can vary by market and model.
+- Samsung Newsroom, One UI 9 beta announcement: https://news.samsung.com/
+  - Use the exact regional announcement and date when documenting Android base details. Confirm current product information against Samsung's official pages.
 
 ## Android platform
 
@@ -17,10 +15,19 @@ Sources below are starting points. Each technical claim in a device report shoul
 - Android Compatibility Definition Document: https://source.android.com/docs/compatibility/cdd
 - Android Compatibility Test Suite: https://source.android.com/docs/compatibility/cts
 
-## Device-specific research
+## Motorola Moto G60 / hanoip
 
-Add exact manufacturer specification pages, public kernel repositories and device configuration sources to the matching device report. Do not cite a repository for a different model or regional variant without explaining the difference.
+- Motorola Support, About your hardware — moto g60: https://en-us.support.motorola.com/app/answers/detail/a_id/159299/~/about-your-hardware---moto-g60
+- Motorola Hanoip device tree: https://github.com/motorola-sm6150-devs/device_motorola_hanoip
+- TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
+- Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
+- Motorola Moto-common target list: https://github.com/moto-common/android_device_motorola_targets
+- Motorola Hanoip community source organization (archived): https://github.com/moto-hanoip/
+
+## Xiaomi devices
+
+Add official Xiaomi specifications, public kernel sources and device configuration repositories only after the exact model and regional variant have been confirmed.
 
 ## Source quality
 
-Prefer manufacturer documentation, official AOSP documentation, and source repositories maintained for the exact device. Secondary articles can help discover leads, but should not be the only evidence for a compatibility claim.
+Prefer manufacturer documentation, official AOSP documentation, and source repositories maintained for the exact device. Secondary articles can help discover leads, but should not be the only evidence for a compatibility claim. Record the exact branch, build, model and date checked. A repository's existence does not prove that it is maintained or compatible with a particular software build.
