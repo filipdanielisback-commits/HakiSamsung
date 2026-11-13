@@ -69,6 +69,17 @@ The public community device tree declares shipping API level 30 and VNDK 30, but
 
 See [the Android 17 VINTF comparison](../../research/MOTO-G60-ANDROID17-VINTF-COMPATIBILITY.md) for the full evidence, source links, and limitations.
 
+
+## Android 17 release-branch correction
+
+The initial Android 17 FCM comparison used an earlier Android 16 QPR2 development configuration. The released AOSP `android17-release` branch is now the reference: its installed Android 17 framework matrix set includes FCM 7, 8, 202404, 202504 and 202604, but not FCM 6. AOSP's matching rules require the device manifest target level to match a framework matrix level exactly.
+
+If the Moto G60 stock manifest declares target level 6, this is a major VINTF blocker. The exact stock manifest has not been verified, so the device's actual target level remains unknown. The FCM 7 matrix contains a narrow legacy-radio note for devices launching with FCM 6; it does not prove complete FCM 6 compatibility.
+
+The released Android 17 branch lists kernel profiles beginning at 5.10/5.15 for FCM 7 and 5.15/6.1 for FCM 8. The Motorola exact-build kernel source is 4.14.190, which does not appear among the listed Android 17 release profiles.
+
+See [the detailed Android 17 FCM/HAL matrix](../../research/MOTO-G60-ANDROID17-FCM-MATRIX.md). This supersedes the earlier preliminary FCM 6 development-branch comparison where they differ.
+
 ## Next evidence to collect
 
 - Android security patch level and public build properties for the exact XT2135-2 RETEU build.
