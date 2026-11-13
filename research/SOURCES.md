@@ -62,3 +62,14 @@ Prefer manufacturer documentation, official AOSP documentation, and source repos
 - Community Hanoip kernel commit enabling Clang LTO: https://github.com/motorola-sm6150-devs/android_kernel_motorola_sm6150/commit/5b04fac0cb2a8311ae69c8644384426e838d91fe
 - LineageOS SM6150 device-family README and supported-device information: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/README.md
 - Detailed Moto G60 kernel source comparison: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-KERNEL-SOURCE-COMPARISON.md
+
+
+## Motorola Moto G60 Android 17 hardware map
+- Hanoip device tree BoardConfig.mk: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/BoardConfig.mk
+- Hanoip device tree device.mk: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/device.mk
+- Hanoip kernel module list: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/modules.load
+- Hanoip proprietary file inventory: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/proprietary-files.txt
+- Shared Motorola SM6150 VINTF manifest: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/manifest.xml
+- Shared Motorola SM6150 compatibility matrix: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/compatibility_matrix.xml
+- Shared Motorola SM6150 proprietary file inventory: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/proprietary-files.txt
+- Detailed Moto G60 Android 17 hardware and vendor dependency map: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-HARDWARE-DRIVER-MAP.md
