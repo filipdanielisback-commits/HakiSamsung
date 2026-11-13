@@ -20,7 +20,7 @@ HakiSamsung is an independent community research project. It studies Android 17,
 
 | Device | Initial research focus | Status |
 |---|---|---|
-| Motorola Moto G60 (hanoip) | Android base, Qualcomm platform, device tree and vendor-interface research | Not evaluated |
+| Motorola Moto G60 (hanoip) | Android 17, kernel, VINTF/HAL and One UI 9 requirements research | Research in progress |
 | Xiaomi 15T | MediaTek platform, Android base, device tree and vendor-interface research | Not evaluated |
 | Other devices | Added after basic hardware and software information is verified | Not evaluated |
 
@@ -31,7 +31,7 @@ A device appearing in this table is **not** a claim that One UI 9 can boot on it
 - docs/ — project goals, architecture notes and research requirements
 - devices/ — per-device compatibility reports
 - samsung-firmware/ — firmware research policy and metadata templates; no firmware binaries
-- research/ — sources, terminology and investigation notes
+- research/ — sources, terminology, investigation notes and device requirements checklists
 - LICENSES/ — third-party notices and licensing records
 
 ## Research principles
@@ -45,6 +45,8 @@ A device appearing in this table is **not** a claim that One UI 9 can boot on it
 ## Current milestone
 
 **Milestone 0 — Documentation and feasibility research.**
+
+The Moto G60 requirements checklist is in [research/MOTO-G60-ONE-UI-9-REQUIREMENTS.md](research/MOTO-G60-ONE-UI-9-REQUIREMENTS.md). It records verified evidence, open questions and technical concerns; it does not claim a compatible build exists.
 
 No ROM, installer, kernel, recovery image or flashable package is provided by this repository.
 
