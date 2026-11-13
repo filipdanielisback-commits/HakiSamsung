@@ -91,3 +91,16 @@ Prefer manufacturer documentation, official AOSP documentation, and source repos
 - AOSP compatibility definition document: https://source.android.com/docs/compatibility/cdd
 - AOSP compatibility test suite documentation: https://source.android.com/docs/compatibility/cts
 - Moto G60 One UI 9 research requirements checklist: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ONE-UI-9-REQUIREMENTS.md
+
+
+## Motorola Moto G60 Android 17 merged-manifest and HAL service audit
+- Hanoip product makefile: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/lineage_hanoip.mk
+- Hanoip device makefile: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/device.mk
+- Hanoip BoardConfig: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/BoardConfig.mk
+- Hanoip dependencies: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/lineage.dependencies
+- Shared SM6150 product configuration: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/common.mk
+- Shared SM6150 BoardConfig: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/BoardConfigCommon.mk
+- Shared SM6150 manifest: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/manifest.xml
+- Shared SM6150 AIDL Power module: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/power-libperfmgr/Android.bp
+- Shared SM6150 AIDL Power VINTF fragment: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/power-libperfmgr/aidl/android.hardware.power-service.sm6150.xml
+- Detailed Moto G60 merged-manifest and HAL service audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-MERGED-MANIFEST-SERVICE-AUDIT.md
