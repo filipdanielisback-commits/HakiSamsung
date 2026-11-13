@@ -19,10 +19,17 @@ Sources below are starting points. Each technical claim in a device report shoul
 
 - Motorola Support, About your hardware — moto g60: https://en-us.support.motorola.com/app/answers/detail/a_id/159299/~/about-your-hardware---moto-g60
 - Motorola Hanoip device tree: https://github.com/motorola-sm6150-devs/device_motorola_hanoip
+- Hanoip device tree `lineage-20` branch: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/tree/lineage-20
+- Hanoip community kernel `lineage-20` branch: https://github.com/motorola-sm6150-devs/android_kernel_motorola_sm6150/tree/lineage-20
+- LineageOS SM6150 kernel `lineage-20` branch: https://github.com/LineageOS/android_kernel_motorola_sm6150/tree/lineage-20
+- Motorola exact-build kernel-source request #574: https://github.com/MotorolaMobilityLLC/kernel-msm/issues/574
+- Motorola exact-build kernel Git tag: https://github.com/MotorolaMobilityLLC/kernel-msm/tree/MMI-S2RIS32.32-20-9-9-2-3
+- Motorola exact-build kernel tag target commit: https://github.com/MotorolaMobilityLLC/kernel-msm/commit/f6673a1302e3b9ca84c54e956ad4075d676fdf59
 - TeamWin Hanoip device configuration: https://github.com/TeamWin/android_device_motorola_hanoip
 - Motorola kernel source organization: https://github.com/MotorolaMobilityLLC/kernel-msm
 - Motorola Moto-common target list: https://github.com/moto-common/android_device_motorola_targets
 - Motorola Hanoip community source organization (archived): https://github.com/moto-hanoip/
+- Independent Moto G60 build/version listing (corroboration only): https://www.phonecopy.com/en/phones/view/motorola_moto_g60
 
 ## Xiaomi devices
 
