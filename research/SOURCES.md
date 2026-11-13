@@ -104,3 +104,15 @@ Prefer manufacturer documentation, official AOSP documentation, and source repos
 - Shared SM6150 AIDL Power module: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/power-libperfmgr/Android.bp
 - Shared SM6150 AIDL Power VINTF fragment: https://github.com/LineageOS/android_device_motorola_sm6150-common/blob/lineage-20/power-libperfmgr/aidl/android.hardware.power-service.sm6150.xml
 - Detailed Moto G60 merged-manifest and HAL service audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-ANDROID17-MERGED-MANIFEST-SERVICE-AUDIT.md
+
+
+## Motorola Moto G60 public device/vendor inheritance audit
+- Hanoip `lineage-20` device.mk: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/device.mk
+- Hanoip `lineage-20` BoardConfig.mk: https://github.com/motorola-sm6150-devs/device_motorola_hanoip/blob/lineage-20/BoardConfig.mk
+- Independent Hanoip device-tree fork: https://github.com/bhawesh2002/android_device_motorola_hanoip
+- Independent fork device manifest: https://github.com/bhawesh2002/android_device_motorola_hanoip/blob/default/manifest.xml
+- Independent fork additional Hanoip manifest: https://github.com/bhawesh2002/android_device_motorola_hanoip/blob/default/manifest_hanoip.xml
+- Independent fork BoardConfig: https://github.com/bhawesh2002/android_device_motorola_hanoip/blob/default/BoardConfig.mk
+- Independent fork device.mk: https://github.com/bhawesh2002/android_device_motorola_hanoip/blob/default/device.mk
+- AOSP VINTF manifest composition rules: https://source.android.com/docs/core/architecture/vintf/objects
+- Detailed public device/vendor inheritance audit: https://github.com/filipdanielisback-commits/HakiSamsung/blob/main/research/MOTO-G60-PUBLIC-DEVICE-VENDOR-INHERITANCE-AUDIT.md
